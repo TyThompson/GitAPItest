@@ -15,7 +15,6 @@ body: body
 end
 
 def add_comment
-body = {body: File.read(FILE)}.to_json
 HTTParty.post(
 "https://api.github.com/repos/tiyd-ror-2016-06/class-notes/issues/6/comments",
 headers: {
